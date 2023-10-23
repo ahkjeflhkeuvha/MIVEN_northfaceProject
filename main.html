@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE NORTH FACE</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="logo.icon">
+</head>
+<body>
+    <div class="main-container">
+            <div class="img-container">
+                <a href="main.html"><img src="logo.png" alt="" style="width:95px"></a>
+            </div>
+    
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="" class="menu">남성</a></li>
+                        <li><a href="" class="menu">여성</a></li>
+                        <li><a href="" class="menu">아동</a></li>
+                        <li><a href="" class="menu">화이트라벨</a></li>
+                        <li><a href="" class="menu">가방&용품</a></li>
+                        <li><a href="" class="menu">신발</a></li>
+                        <li><a href="ranking.html" class="menu">랭킹</a></li>
+                        <li><a href=""><img src="outdoor_research.png" alt="" id="outdoor"></a></li>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="login.html">회원가입</a></li>
+                        <li><a href="">장바구니</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    <span class="slideshow-container">
+        <div class="Slidesbackground">
+           <div class="mySlides fade">
+           <img src="item1.jpg" class="slideshow-image">
+           </div>
+           <div class="mySlides fade">
+               <img src="item2.jpg" class="slideshow-image">
+           </div>
+           <div class="mySlides fade">
+               <img src="item3.jpg" class="slideshow-image">
+           </div>
+           <div class="mySlides fade">
+               <img src="item4.jpg" class="slideshow-image">
+           </div>
+           <div class="mySlides fade">
+            <img src="item5.jpg" class="slideshow-image">
+        </div>
+       </div>
+    </span>
+
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+        
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+        
+            setTimeout(showSlides, 2000); // 2초마다 이미지가 체인지됩니다
+        }
+      </script>
+</body>
+</html>

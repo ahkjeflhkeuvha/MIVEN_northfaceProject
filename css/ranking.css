@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+.head-container {
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+select {
+    width: 120px;
+    height: 36px;
+    border: 0;
+    font-weight: bold;
+    margin-left: 24px;
+    margin-top: 32px;
+}
+.item {
+    display: flex;
+}
+.clothes {
+    margin-top: 50px;
+    margin-left: 24px;
+}
+img {
+    width: 296px;
+}
+.gray {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.clothes > #vest:hover {
+    content: url(vest.jpg);
+}
+.clothes > #jacket:hover {
+    content: url(jacket.jpg);
+}
+.clothes > #short:hover {
+    content: url(short.jpg);
+}
+.clothes > #brown:hover {
+    content: url(brown.jpg);
+}
+.clothes > #silver:hover {
+    content: url(silver.jpg);
+}
+.clothes > #pink:hover {
+    content: url(pink.jpg);
+}
+.clothes > #green:hover {
+    content: url(green.jpg);
+}
+.clothes > #long:hover {
+    content: url(long.jpg);
+}
+.item-name {
+    font-weight: bold;
+}
+.item-sub {
+    font-weight: bold;
+}
+span {
+    color: red;     
+    margin-right: 12px;
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    display: flex;
+    width: max-content;
+    height: fit-content;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+.nav-container {
+    margin-top: 36px;
+}
+li {
+    list-style: none;
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+.menu:hover {
+    color: rgb(157, 58, 58);
+    padding-bottom: 38px;
+    border-bottom: 4px solid black;
+}
+#outdoor {
+    height: 40px;
+    margin-top: -8px;
+    margin-right: 116px;
+    margin-bottom: -14px;
+}
+
+.slideshow-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.mySlides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
