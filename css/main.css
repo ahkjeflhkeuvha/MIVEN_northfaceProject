@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .main-container {
     display: flex;
@@ -67,4 +68,33 @@ a {
     to {
         opacity: 1
     }
+}
+.item {
+    float: left;
+}
+#item-left {
+    margin-top: 72px;
+    width: 50%;
+    height: 75%;
+}
+#item-righttop {
+    margin-top: 72px;
+    width: 50%;
+    height: 40%;
+}
+#item-rightbottom {
+    width: 25%;
+    height: 35%;
+}
+#vest {
+    width: 100%;
+}
+.item > #vest:hover {
+    content: url(vest.jpg);
+}
+#choice {
+    width: 25%;
+    height: 400px;
+    background-color: #f6f6f6;
+    padding: 8px;
 }
