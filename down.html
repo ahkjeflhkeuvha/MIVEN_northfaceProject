@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/down.css">
+</head>
+<body>
+    <div id="sidebar">
+        <button id="check" value="0"><img src="free-icon-transfer-3839928.png" alt="" width="16px"></button>
+    </div>
+
+    <script>
+            const check = document.getElementById('check');
+            
+            check.addEventListener("click", (e)=>{
+                if(check.value == '0'){
+                    check.style.transform = `translate()`;
+                    document.getElementById('sidebar').style.width = '30%';
+                    document.getElementById('check').value = 1;
+                }
+                else {
+                    document.getElementById('sidebar').style.width = '0%';
+                    document.getElementById('check').value = 0;
+                }
+            })
+
+    </script>
+</body>
+</html>
