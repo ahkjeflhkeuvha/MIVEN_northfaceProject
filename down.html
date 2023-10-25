@@ -2,30 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>THE NORTH FACE</title>
     <link rel="stylesheet" href="/css/down.css">
+    <link rel="icon" href="logo.icon">
 </head>
 <body>
-    <div id="sidebar">
-        <button id="check" value="0"><img src="free-icon-transfer-3839928.png" alt="" width="16px"></button>
+    <div class="main-container">
+            <div class="img-container">
+                <a href="main.html"><img src="logo.png" alt="" style="width:95px"></a>
+            </div>
+    
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="" class="menu">남성</a></li>
+                        <li><a href="" class="menu">여성</a></li>
+                        <li><a href="" class="menu">아동</a></li>
+                        <li><a href="" class="menu">화이트라벨</a></li>
+                        <li><a href="" class="menu">가방&용품</a></li>
+                        <li><a href="" class="menu">신발</a></li>
+                        <li><a href="ranking.html" class="menu">랭킹</a></li>
+                        <li><a href="outdoor.html"><img src="outdoor_research.png" alt="" id="outdoor"></a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">장바구니</a></li>
+                    </ul>
+                </nav>
+            </div>
     </div>
 
+    <div class="page">
+        <div id="side">
+            <button id="but" value="0"><img src="free-icon-transfer-3839928.png" id="side-img"></button>
+        </div>
+        <div id="product-menu" class="product-menu">
+            <div>총 65개의 상품</div>
+            <div id="null"></div>
+            <div class="list">
+                <a href="">신상품순</a>
+                <a href="">인기상품순</a>
+                <a href="">높은가격순</a>
+                <a href="">낮은가격순</a>
+                <a href="">할인율 높은순</a>
+                <a href="">리뷰 많은순</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
     <script>
-            const check = document.getElementById('check');
-            
-            check.addEventListener("click", (e)=>{
-                if(check.value == '0'){
-                    check.style.transform = `translate()`;
-                    document.getElementById('sidebar').style.width = '30%';
-                    document.getElementById('check').value = 1;
-                }
-                else {
-                    document.getElementById('sidebar').style.width = '0%';
-                    document.getElementById('check').value = 0;
-                }
-            })
+        let but = document.getElementById('side');
+        let menu = document.getElementById('product-menu');
 
+        but.addEventListener("click", ()=> {
+            if(but.value == 0){
+                but.style.width = '20%';
+                menu.style.width = '80%';
+                but.value = 1;
+            }
+            else {
+                but.style.width = '0%';
+                menu.style.width = '100%';
+                but.value = 0;
+            }
+        })
     </script>
 </body>
 </html>
